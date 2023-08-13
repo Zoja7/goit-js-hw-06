@@ -23,7 +23,7 @@ button {
   cursor: pointer;
 }
 
-/* task-03*/
+/**task-03**/
 .gallery{
   display: flex;
   flex-direction: column;
