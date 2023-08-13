@@ -5,12 +5,12 @@ const innerVal = document.getElementById('value');
 let counterValue = 0;
 
 const handleClick = (event) => {
-    if (event.currentTarget.dataset.action === 'decrement') {
+    if (event.target.dataset.action === 'decrement') {
         counterValue--;
-    } else if (event.currentTarget.dataset.action === 'increment') {
+    } else if (event.target.dataset.action === 'increment') {
         counterValue++;
     }
-    innerVal.textContent = counterValue; // Update the displayed value
+    innerVal.textContent = counterValue; 
 };
 
 btnDecr.addEventListener("click", handleClick);
