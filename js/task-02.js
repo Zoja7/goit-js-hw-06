@@ -8,14 +8,31 @@ const ingredients = [
 ];
 
 function renderMarkup(ingredients) {
-  const ul = document.querySelector("#ingredients");
+//   const ul = document.querySelector("#ingredients");
+
+//   const liElElements = [];
+  
+//    ingredients.map( ingredient => {
+//      const liEl = document.createElement("li");
+//      liEl.classList.add("item")
+//      liEl.textContent = ingredient;
+//      liElElements.push(liEl);
+//    });
+//   ul.append(...liElElements); 
+// }  
+// renderMarkup(ingredients);
+
+ const ul = document.querySelector("#ingredients");
 
    ingredients.map( ingredient => {
      const liEl = document.createElement("li");
      liEl.classList.add("item")
      liEl.textContent = ingredient;
-     ul.appendChild(liEl); 
+     return liEl;
+   }).forEach( liEl => {
+       ul.append(liEl); 
    });
+  
 }
     
 renderMarkup(ingredients);
