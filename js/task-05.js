@@ -12,9 +12,8 @@ textInput.addEventListener("input", (event)=> {
 
 textInput.addEventListener("blur", () => {
   const inputValue = textInput.value;
-  
   if (inputValue === "") {
-    textOutput.textContent = "Anonymous";
+    textOutput.textContent = "Anonymous"; 
   } else {
     textOutput.textContent = inputValue;
   }
